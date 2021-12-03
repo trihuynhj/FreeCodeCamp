@@ -29,7 +29,16 @@ class App extends React.Component {
 
     // Generate a random quote from JSON
     getRandomIndex() {
+        const { quotes } = this.state;
         
+        if (quotes.length > 0) {
+            const _index = Math.floor(Math.random() * quotes.length);
+            const _colorIndex = Math.floor(Math.random() * txtCol.length);
+            this.setState({
+                index: _index,
+                colorIndex: _colorIndex
+            });
+        }
     }
 
     render() {
