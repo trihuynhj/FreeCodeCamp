@@ -17,10 +17,12 @@ class App extends React.Component {
         }
     }
 
+    // Fetch quotes from API once component has been mounted
     componentDidMount() {
         fetch(quoteAPI)
             .then(response => response.json())
             .then(data => {
+                // getRandomIndex can be executed as a callback within setState
                 this.setState({quotes: data.quotes}, this.getRandomIndex);
             })
     }
