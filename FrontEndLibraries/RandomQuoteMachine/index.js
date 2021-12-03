@@ -24,7 +24,12 @@ class App extends React.Component {
             .then(data => {
                 // getRandomIndex can be executed as a callback within setState
                 this.setState({quotes: data.quotes}, this.getRandomIndex);
-            })
+            });
+    }
+
+    // Generate a random quote from JSON
+    getRandomIndex() {
+        
     }
 
     render() {
