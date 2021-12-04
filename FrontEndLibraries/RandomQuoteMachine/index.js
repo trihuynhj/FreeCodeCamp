@@ -94,6 +94,11 @@ class App extends React.Component {
     }
 
     render() {
+        // State's properties
+        const { quotes, index, colorIndex } = this.state;
+        // Current quote
+        const currentQuote = quotes[index];
+        
         return (
             <div className="wrapper">
                 Hello Again!
