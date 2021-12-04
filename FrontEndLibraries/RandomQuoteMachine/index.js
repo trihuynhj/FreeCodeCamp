@@ -87,6 +87,9 @@ class App extends React.Component {
                 index: _index,
                 colorIndex: _colorIndex
             });
+
+            // Bind component functions to state
+            this.getRandomIndex = this.getRandomIndex.bind(this);
         }
     }
 
