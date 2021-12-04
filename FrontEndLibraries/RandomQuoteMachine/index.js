@@ -98,7 +98,9 @@ class App extends React.Component {
         const { quotes, index, colorIndex } = this.state;
         // Current quote
         const currentQuote = quotes[index];
-        
+        // Twitter Plugin
+        const twitterURL = `https://twitter.com/intent/tweet?hashtags=quotes&text=${currentQuote && currentQuote.quote} - ${currentQuote && currentQuote.author}`;
+
         return (
             <div className="wrapper">
                 Hello Again!
