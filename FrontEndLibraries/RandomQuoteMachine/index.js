@@ -104,7 +104,9 @@ class App extends React.Component {
         return (
             <div className="wrapper" style={ { backgroundColor: bgCol[colorIndex] } }>
                 <div className="d-flex align-items-center justify-content-center" id="wrapper">
-
+                    <div className="container rounded" id="quote-box">
+                        <div id="text" style={ { color: txtCol[colorIndex] } }></div>
+                    </div>
                 </div>
             </div>
         )
