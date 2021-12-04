@@ -7,7 +7,7 @@
 // API to get the JSON quotes
 const quoteAPI = "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
 
-// Color palette
+// Color Palette
 const txtCol = [
     "#2c6e49", // Spring Green
     "#a60067", // Flirt
@@ -29,7 +29,32 @@ const txtCol = [
     "#e56b6f", // Candy Pink
     "#a63a50", // Amaranth Purple
     "#582b11"  // Seal Brown
-  ];
+];
+
+// Background-color Palette
+const bgCol = [
+    "#40a16a",
+    "#d9439f",
+    "#8e82e8",
+    "#bf4375",
+    "#3c6396",
+    "#f57b56",
+    "#ffd166",
+    "#7d759e",
+    "#de7850",
+    "#91917e",
+    "#b3708a",
+    "#857280",
+    "#5757bd",
+    "#de5f5d",
+    "#6ab086",
+    "#2aa89a",
+    "#d9899a",
+    "#e58e91",
+    "#d67286",
+    "#b0663c"
+];
+
 
 class App extends React.Component {
     constructor(props) {
