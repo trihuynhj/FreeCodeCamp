@@ -106,8 +106,12 @@ class App extends React.Component {
                 <div className="d-flex align-items-center justify-content-center" id="wrapper">
                     <div className="container rounded" id="quote-box">
                         <div id="text" style={ { color: txtCol[colorIndex] } }>
-                            <i class="fa fa-quote-left">&nbsp;&nbsp;</i>
+                            <i className="fa fa-quote-left">&nbsp;&nbsp;</i>
                             {currentQuote && <span className="colorAdd">{currentQuote.quote}</span>}
+                        </div>
+                        <div id="author" style={ { color: txtCol[colorIndex] } } className="d-flex justify-content-end">
+                            -&nbsp;
+                            {currentQuote && <span><em>{currentQuote.author}</em></span>}
                         </div>
                     </div>
                 </div>
