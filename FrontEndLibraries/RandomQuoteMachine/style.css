@@ -1,4 +1,10 @@
 #wrapper {
     height: 100vh;
   }
-  
+
+#quote-box {
+  background-color: #ededed;
+  width: 600px;
+  height: auto;
+  padding: 5px 25px 5px 25px;
+}
