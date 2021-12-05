@@ -114,7 +114,7 @@ class App extends React.Component {
                             {currentQuote && <span><em>{currentQuote.author}</em></span>}
                         </div>
                         <div className="buttons d-flex justify-content-between">
-                            <a id="tweet-quote" className="btn btn-primary"></a>
+                            <a id="tweet-quote" className="btn btn-primary" title="Tweet this quote!" href={ twitterURL } target="_top"></a>
                         </div>   
                     </div>
                 </div>
