@@ -117,6 +117,7 @@ class App extends React.Component {
                             <a id="tweet-quote" className="btn btn-primary" title="Tweet this quote!" href={ twitterURL } target="_top" style={ { backgroundColor: bgCol[colorIndex], border: "solid" + bgCol[colorIndex] } }>
                                 <i className="fa fa-twitter"></i>
                             </a>
+                            <button id="new-quote" className="btn btn-primary" title="Generate a new quote!" type="button" onClick={ this.getRandomIndex }></button>
                         </div>   
                     </div>
                 </div>
