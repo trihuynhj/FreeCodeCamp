@@ -102,22 +102,22 @@ class App extends React.Component {
         const twitterURL = `https://twitter.com/intent/tweet?hashtags=quotes&text=${currentQuote && currentQuote.quote} - ${currentQuote && currentQuote.author}`;
 
         return (
-            <div id="wrapper" style={ { backgroundColor: bgCol[colorIndex] } }>
-                <div className="d-flex align-items-center justify-content-center" id="">
+            <div id="wrapper" style={{backgroundColor: bgCol[colorIndex]}}>
+                <div className="d-flex align-items-center justify-content-center" id="wrapper">
                     <div className="container rounded" id="quote-box">
-                        <div id="text" style={ { color: txtCol[colorIndex] } }>
+                        <div id="text" style={{color: txtCol[colorIndex]}}>
                             <i className="fa fa-quote-left">&nbsp;&nbsp;</i>
                             {currentQuote && <span className="colorAdd">{currentQuote.quote}</span>}
                         </div>
-                        <div id="author" style={ { color: txtCol[colorIndex] } } className="d-flex justify-content-end">
+                        <div id="author" style={{color: txtCol[colorIndex]}} className="d-flex justify-content-end">
                             -&nbsp;
                             {currentQuote && <span><em>{currentQuote.author}</em></span>}
                         </div>
                         <div className="buttons d-flex justify-content-between">
-                            <a id="tweet-quote" className="btn btn-primary" title="Tweet this quote!" href={ twitterURL } target="_top" style={ { backgroundColor: bgCol[colorIndex], border: "solid" + bgCol[colorIndex] } }>
+                            <a id="tweet-quote" className="btn btn-primary" title="Tweet this quote!" href={twitterURL} target="_top" style={{backgroundColor: bgCol[colorIndex], border: "solid" + bgCol[colorIndex]}}>
                                 <i className="fa fa-twitter"></i>
                             </a>
-                            <button id="new-quote" className="btn btn-primary" title="Generate a new quote!" type="button" onClick={ this.getRandomIndex } style={ { backgroundColor: bgCol[colorIndex], border: "solid" + bgCol[colorIndex] } }>
+                            <button id="new-quote" className="btn btn-primary" title="Generate a new quote!" type="button" onClick={this.getRandomIndex} style={{backgroundColor: bgCol[colorIndex], border: "solid" + bgCol[colorIndex]}}>
                                 New Quote
                             </button>
                         </div>   
