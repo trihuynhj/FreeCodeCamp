@@ -102,8 +102,8 @@ class App extends React.Component {
         const twitterURL = `https://twitter.com/intent/tweet?hashtags=quotes&text=${currentQuote && currentQuote.quote} - ${currentQuote && currentQuote.author}`;
 
         return (
-            <div id="wrapper" className="d-flex align-items-center justify-content-center" style={ { backgroundColor: bgCol[colorIndex] } }>
-                <div className="" id="">
+            <div id="wrapper" style={ { backgroundColor: bgCol[colorIndex] } }>
+                <div className="d-flex align-items-center justify-content-center" id="">
                     <div className="container rounded" id="quote-box">
                         <div id="text" style={ { color: txtCol[colorIndex] } }>
                             <i className="fa fa-quote-left">&nbsp;&nbsp;</i>
